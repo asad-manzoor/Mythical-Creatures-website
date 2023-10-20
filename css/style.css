@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    color: #333;
+    background-color: #000000 !important;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("/images/hero-img.png") no-repeat 0 0;
+
+    background-size: cover;
+    background-position: center;
+}
+a .btn{
+    border-radius: 90px;
+    margin-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+h1,h3{
+    font-family: sans-serif; 
+    color:rgb(255, 255, 255);
+    font-weight:bold !important;
+    text-shadow: 2px 2px 4px #000000;
+}
+h1,h5{
+    color: rgb(232, 199, 102) !important;
+}
+.link li{
+    list-style: none;   
+}
+/* header */
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+
+}
+.menu .btn{
+    margin-right: 50px;
+}
+a:hover{
+    color: rgb(232, 199, 102);
+}
+header{
+    /* position: fixed; */
+    padding: auto 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.2s ease-in-out;
+    height: auto;
+    background-color:transparent !important;
+}
+
+.menu{
+    width: 100%;
+    height:60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.menu .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.menu .link{
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+}
+.menu .toggle-btn{
+    color:#fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn{
+    
+    color:#ffffff;
+    padding: 0.2rem 1rem;
+    border: none;
+    outline:none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action-btn i{
+    color:#ffffff;
+    font-size: 35px;
+}
+
+.action-btn i:hover{
+    scale: 1.0;
+    color:#b155dce9;
+}
+.linkedin i:hover{
+    scale: 1.0;
+    color:#0059fede;
+}
+.action-btn:active{
+    scale: 0.95;
+}
+/* dropdown */
+.Dropdown{
+    display: block;
+    position: absolute;
+    right: 2rem;
+    width: 300px;
+    height: 0;
+    background-color:rgba(105, 105, 105, 0.294);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.Dropdown.open{
+    height:370px;
+}
+.Dropdown li{
+    padding: 0.7rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    list-style: none;   
+}
+
+.Dropdown li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.Dropdown .toggle-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* hero section */
+#hero-text{
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+#hero-text{
+    padding-top: 40px;
+    padding-bottom:50px;
+}
+#hero-text div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#hero-text h1{
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
+}
+#hero-text h3{
+    font-size: 2vw;
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+#hero-text div a button{
+    font-size: 1.5vw;
+}
+
+
+/* about section */
+#aboutme{ 
+    padding-bottom: 70px;
+    padding-top: 20px;
+    color: #333;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("/images/about-img.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#aboutme p{
+    padding-top: 20px;
+    font-size: 1.1vw !important;;  
+}
+#aboutme div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#aboutme h3{
+    font-size: 2vw;
+    color:rgb(255, 255, 255);
+}
+.heading-container{
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    text-align: center;
+}
+/*featured section */
+#Featured{
+    padding-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(3, 3, 3, 0.5)),  url("/images/cards-bg-img.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#Featured .card{
+    margin-left: 20px;
+    transition: 0.5s;
+    --bs-card-bg:  none !important;
+    --bs-card-border-radius: 30px !important;
+    
+}
+#Featured .card2{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/card-img3.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+}
+#Featured .card2:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(93, 92, 92, 0.5);
+    -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+
+}
+#Featured .card1{
+    background:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("/images/card-img.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#Featured .card3{
+    background:  linear-gradient(rgba(1, 1, 1, 0.6), rgba(0, 0, 0, 0.9)), url("/images/card-img2.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#Featured .card-body{
+    color: #fff;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 20px;
+}
+#Featured .card1 .card-body , #Featured .card3 .card-body{
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 20px;
+}
+/* FAQS */
+#Faqs{
+    padding-bottom: 70px;
+    padding-top: 70px;
+    background: linear-gradient(rgba(0, 0, 0, 0.948),rgba(0, 0, 0, 0.792)), url("/images/faq-img.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#Faqs p{
+    font-size: 1.5vw;   
+}
+.accordion{
+    background-color: none !important;
+}
+#Faqs .accordion-button {
+    background-color: #0000; /* Change this color to whatever you want */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22) ; /* Removes the border */
+    color:aliceblue;
+    font-weight: bold;
+
+}
+
+#Faqs .accordion-item {
+    background-color: transparent !important;
+    border: transparent !important;
+    color:aliceblue
+}
+#Faqs .accordion-body{
+    text-align: left;
+}
+/* beta-section */
+#beta-section{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.508),rgba(0, 0, 0, 0.474)), url("/images/beta-img.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#beta-section .row div{
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+}
+#beta-section p{
+    font-size: 1.5vw;
+    color: #fff;
+}
+
+/* last section */
+#last-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.947), rgba(0, 0, 0, 0.833)), url("/images/about-img.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#last-section .set-p{
+    position: relative;
+}
+#last-section .set1{
+    z-index: 1; 
+    top: 90px;        
+}
+#last-section .set2{
+    z-index: 2;  
+}
+#last-section .set1 h1{
+    font-size: 9vw;
+    color: #fff;
+    font-weight: bold;
+}
+#last-section .set2 h3{
+    margin-top: 200px;
+    font-size: 1.5vw;
+    color: #adaaaa;
+}
+.moster-img {
+    width: 400px;          
+    height: 300px;           
+    background: url("/images/moster-img.png") no-repeat 0 0;
+    display: block;
+    filter: drop-shadow(0px 0px 15px rgba(188, 164, 30, 0.7)); 
+    background-size: auto;
+    background-position: center;
+    margin: auto;          
+    margin-top: 30px;
+}
+
+/* service-cards */
+#service-cards .grid {
+    display: flex;           
+    justify-content: center; 
+}
+
+#service-cards .grid > div {
+    flex: 1;                
+    text-align: center;    
+    margin: 10px;
+}
+#service-cards{
+    background: linear-gradient(rgba(40, 20, 20, 0.188), rgba(5, 5, 5, 0.313)),  url("/images/cards-bg-img.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .heading-container{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+#service-cards .heading-container p{
+    padding-top: 40px;
+}
+#service-cards .card{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+    width: 224px;
+    height: 308px;
+}
+#service-cards .card:hover{
+    transform: scale(0.91);
+    box-shadow: 0 0 20px rgba(93, 92, 92, 0.5);
+    -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+
+}
+#service-cards .m1{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/m1.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .m2{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/m2.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .m3{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/m3.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .m4{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/m4.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .m5{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/m5.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .m6{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/m6.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .m7{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/m7.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .m8{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/m8.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .m9{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/m9.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .m10{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/m10.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .m11{
+    background:linear-gradient(rgba(45, 36, 36, 0.5), rgba(0, 0, 0, 0.5)),  url("/images/m11.png") no-repeat 0 0;
+    background-size: cover;
+    background-position: center;
+}
+#service-cards .card h2{
+    color: rgb(232, 199, 102);
+    font-size: 1.5vw;
+    padding-top: 200px;
+}
+#service-cards .card p{
+    color:#999797;
+    font-size: 1vw;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+/* footer */
+footer{
+    background-color: transparent !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer p{
+    text-align: left;
+}
+footer p,footer a{
+    color: #fff !important;
+    --bs-secondary-color: #fff !important;
+}
+/* hovers */
+footer a:hover{
+    --bs-secondary-color: #eef448 !important;
+    color: #000;
+    transition: 0.5s;
+}
+.link-body-emphasis i {
+    font-size: 24px;
+    color: #ffffff; /* or any color you prefer */
+    transition: color 0.3s ease;
+}
+
+.link-body-emphasis:hover i {
+    color: #eef448; /* change color on hover */
+}
+
+
+
+/* RESPONSIVE */
+@media(max-width:992px){
+    header{
+        padding: 0 2rem;
+    }
+    .menu .link,.menu .action-btn{
+        display: none
+    }
+    .menu .toggle-btn{
+        display: block
+    }
+    .Dropdown{
+        display: block;
+    }
+    .Dropdown a:hover{
+        color:rgb(127, 255, 127);
+    }
+    .menu .btn-danger{
+        display: none;
+    }
+
+    /* hero section */
+    #hero-text{
+        margin-top: 0;
+    }
+    #hero-text{
+        padding-top: 20px;
+        padding-bottom:0;
+    }
+    #hero-text div{
+        padding-top: 40px;
+        padding-bottom: 0;
+        margin-bottom: 70px;
+    }
+    #hero-text h1{
+        font-size: 7vw;
+    }
+    #hero-text h3{
+        font-size: 4vw;
+    }
+    #hero-text div a button{
+        font-size: 3vw;
+    }
+    /* about section */
+    #aboutme{ 
+    padding-bottom: 20px;
+    padding-top: 0;
+    }
+    #aboutme div{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #aboutme h3{
+        font-size: 4vw;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .heading-container{
+        color:rgb(255, 255, 255);
+        font-weight: bolder;
+        text-align: center;
+    }
+    /*featured section */
+    #Featured{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    #Featured .card{
+    
+        margin-left: 190px;
+        margin-bottom: 20px;  
+    }
+    /* FAQS */
+    #Faqs{
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    #Faqs p{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        font-size: 3vw;  
+        margin: 0 !important; 
+    }
+    /* service-cards */
+    #service-cards .heading-container{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    #service-cards .heading-container p{
+        padding-top: 10px;
+    }
+    #service-cards .card{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+        width: 224px;
+        height: 200px;
+    }
+    #service-cards .card h2{
+        color: rgb(232, 199, 102);
+        font-size: 1.5vw;
+        padding-top: 120px;
+    }
+    /* beta-section */
+    #beta-section{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background: linear-gradient(rgba(0, 0, 0, 0.508),rgba(0, 0, 0, 0.474)), url("/images/beta-img.png") no-repeat 0 0;
+        background-size: cover;
+        background-position: center;
+    }
+    #beta-section .row div{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #beta-section h1{
+        font-size: 5vw;
+    }
+    #beta-section p{
+        font-size: 3vw;
+    }
+    /* last section */
+    #last-section .set1{
+        z-index: 1; 
+        top: 60px;        
+    }
+    #last-section .set1 h1{
+        font-size: 9vw;
+    }
+    #last-section .set2 h3{
+        margin-top: 190px;
+        font-size: 3vw;
+    }
+
+    /* footer */
+    
+    footer p,footer a{
+        font-size: 1.1vw !important;
+    }
+}
+
+@media(max-width: 576px){
+    .Dropdown{
+       left: 2rem;
+       width: unset;
+    }
+    .menu .toggle-btn{
+        font-size: 1.5rem;
+    }
+      /* hero section */
+    #hero-text{
+        margin-top: 40px;
+    }
+    #hero-text{
+        padding-top: 40px;
+        padding-bottom:0;
+    }
+    #hero-text div{
+        padding-top: 20px;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+    #hero-text h1{
+        font-size: 7vw;
+    }
+    #hero-text h3{
+        font-size: 4vw;
+    }
+    #hero-text div a button{
+        font-size: 3vw;
+    }
+      /* about section */
+    #aboutme div{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #Featured .card{
+        margin-left: 40px;
+        margin-bottom: 20px;  
+    }
+    /* service-cards */
+
+    #service-cards .heading-container p{
+        padding-top: 10px;
+    }
+    #service-cards .heading-container h1{
+        font-size: 3vw;
+    }
+    #service-cards .card{
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+        width: 235px;
+        height: 120px;
+    }
+    #service-cards .card h2{
+        color: rgb(232, 199, 102);
+        font-size: 1vw;
+        padding-top: 90px;
+    }
+    #service-cards .card p{
+        display: none;
+    }
+    #last-section .set1{
+        z-index: 1; 
+        top: 40px;        
+    }
+    footer .link-body-emphasis{
+        font-size: x-small;
+    }
+    footer{
+        padding-top: 30px;
+    }
+
+}
