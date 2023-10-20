@@ -334,7 +334,7 @@ header{
 .moster-img {
     width: 400px;          
     height: 300px;           
-    background: url("/images/moster-img.png") no-repeat 0 0;
+    background: url("../images/moster-img.png") no-repeat 0 0;
     display: block;
     filter: drop-shadow(0px 0px 15px rgba(188, 164, 30, 0.7)); 
     background-size: auto;
